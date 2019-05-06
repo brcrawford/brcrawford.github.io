@@ -1,0 +1,215 @@
+********************************************************************************
+* DUPLICATOR-LITE: Install-Log
+* STEP-1 START @ 05:58:07
+* VERSION: 1.3.10
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+PHP:		7.1.28 | SAPI: cgi-fcgi
+PHP MEMORY:	4294967296 | SUHOSIN: disabled
+SERVER:		Apache
+DOC ROOT:	/home/brandon5/public_html/communitylegalaccess
+DOC ROOT 755:	true
+LOG FILE 644:	true
+REQUEST URL:	http://brandonc.sgedu.site/communitylegalaccess/dup-installer/main.installer.php
+SAFE MODE :	0
+CONFIG MODE :	NEW
+--------------------------------------
+PRE-EXTRACT-CHECKS
+--------------------------------------
+- PASS: Apache '.htaccess' not found - no backup needed.
+- PASS: Microsoft IIS 'web.config' not found - no backup needed.
+- PASS: WordFence '.user.ini' not found - no backup needed.
+--------------------------------------
+ARCHIVE SETUP
+--------------------------------------
+NAME:	20190417_communitylegalaccess_a61a466b80cbebb27175_20190417160857_archive.zip
+SIZE:	225.29MB
+
+ZIP:	Shell Exec Unzip
+>>> Starting Shell-Exec Unzip:
+Command: unzip -o -qq '/home/brandon5/public_html/communitylegalaccess/20190417_communitylegalaccess_a61a466b80cbebb27175_20190417160857_archive.zip' -d '/home/brandon5/public_html/communitylegalaccess' 2>&1
+<<< Shell-Exec Unzip Complete.
+--------------------------------------
+POST-EXTACT-CHECKS
+--------------------------------------
+PERMISSION UPDATES:
+    -DIRS:  '755'
+    -FILES: '644'
+
+STEP-1 COMPLETE @ 05:58:10 - RUNTIME: 2.7050 sec.
+
+
+
+********************************************************************************
+* DUPLICATOR-LITE INSTALL-LOG
+* STEP-2 START @ 06:09:17
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+--------------------------------------
+DATABASE-ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 5.6.40 -- Build Server: 5.5.57
+FILE SIZE:	dup-database__a61a466-17160857.sql (4.03MB)
+TIMEOUT:	5000
+MAXPACK:	33554432
+SQLMODE:	NO_ENGINE_SUBSTITUTION
+NEW SQL FILE:	[/home/brandon5/public_html/communitylegalaccess/dup-installer/dup-installer-data__a61a466-17160857.sql]
+COLLATE FB:	Off
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+DB VIEWS:	enabled
+DB PROCEDURES:	enabled
+ERRORS FOUND:	0
+DROPPED TABLES:	0
+RENAMED TABLES:	0
+QUERIES RAN:	352
+
+wp_commentmeta: (0)
+wp_comments: (0)
+wp_duplicator_packages: (0)
+wp_gf_draft_submissions: (0)
+wp_gf_entry: (4)
+wp_gf_entry_meta: (22)
+wp_gf_entry_notes: (0)
+wp_gf_form: (7)
+wp_gf_form_meta: (7)
+wp_gf_form_revisions: (0)
+wp_gf_form_view: (47)
+wp_give_commentmeta: (0)
+wp_give_comments: (1)
+wp_give_donationmeta: (18)
+wp_give_donormeta: (3)
+wp_give_donors: (1)
+wp_give_formmeta: (160)
+wp_give_logmeta: (2)
+wp_give_logs: (1)
+wp_give_sequential_ordering: (1)
+wp_give_sessions: (1)
+wp_links: (0)
+wp_options: (270)
+wp_postmeta: (1002)
+wp_posts: (895)
+wp_term_relationships: (28)
+wp_term_taxonomy: (9)
+wp_termmeta: (11)
+wp_terms: (9)
+wp_usermeta: (120)
+wp_users: (5)
+wp_wpgmza: (4)
+wp_wpgmza_categories: (0)
+wp_wpgmza_category_maps: (0)
+wp_wpgmza_circles: (0)
+wp_wpgmza_maps: (1)
+wp_wpgmza_polygon: (0)
+wp_wpgmza_polylines: (0)
+wp_wpgmza_rectangles: (0)
+Removed '46' cache/transient rows
+
+INSERT DATA RUNTIME: 0.3903 sec.
+STEP-2 COMPLETE @ 06:09:17 - RUNTIME: 0.3937 sec.
+
+
+
+********************************************************************************
+DUPLICATOR-LITE INSTALL-LOG
+STEP-3 START @ 06:09:46
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	utf8
+CHARSET CLIENT:	utf8
+
+--------------------------------------
+SERIALIZER ENGINE
+[*] scan every column
+[~] scan only text columns
+[^] no searchable columns
+--------------------------------------
+wp_commentmeta^ (0)
+wp_comments^ (0)
+wp_duplicator_packages^ (0)
+wp_gf_draft_submissions^ (0)
+wp_gf_entry~ (4)
+wp_gf_entry_meta~ (22)
+wp_gf_entry_notes^ (0)
+wp_gf_form~ (7)
+wp_gf_form_meta~ (7)
+wp_gf_form_revisions^ (0)
+wp_gf_form_view~ (47)
+wp_give_commentmeta^ (0)
+wp_give_comments~ (1)
+wp_give_donationmeta~ (18)
+wp_give_donormeta~ (3)
+wp_give_donors~ (1)
+wp_give_formmeta~ (160)
+wp_give_logmeta~ (2)
+wp_give_logs~ (1)
+wp_give_sequential_ordering~ (1)
+wp_give_sessions~ (1)
+wp_links^ (0)
+wp_options~ (270)
+wp_postmeta~ (1002)
+wp_posts~ (895)
+wp_term_relationships~ (28)
+wp_term_taxonomy~ (9)
+wp_termmeta~ (11)
+wp_terms~ (9)
+wp_usermeta~ (120)
+wp_users~ (5)
+wp_wpgmza~ (4)
+wp_wpgmza_categories^ (0)
+wp_wpgmza_category_maps^ (0)
+wp_wpgmza_circles^ (0)
+wp_wpgmza_maps~ (1)
+wp_wpgmza_polygon^ (0)
+wp_wpgmza_polylines^ (0)
+wp_wpgmza_rectangles^ (0)
+--------------------------------------
+Search1:	'/home/ubuntu/workspace' 
+Change1:	'/home/brandon5/public_html/communitylegalaccess' 
+Search2:	'\/home\/ubuntu\/workspace' 
+Change2:	'\/home\/brandon5\/public_html\/communitylegalaccess' 
+Search3:	'%2Fhome%2Fubuntu%2Fworkspace%2F' 
+Change3:	'%2Fhome%2Fbrandon5%2Fpublic_html%2Fcommunitylegalaccess%2F' 
+Search4:	'\home\ubuntu\workspace' 
+Change4:	'/home/brandon5/public_html/communitylegalaccess' 
+Search5:	'\\home\\ubuntu\\workspace' 
+Change5:	'\/home\/brandon5\/public_html\/communitylegalaccess' 
+Search6:	'%5Chome%5Cubuntu%5Cworkspace' 
+Change6:	'%2Fhome%2Fbrandon5%2Fpublic_html%2Fcommunitylegalaccess' 
+Search7:	'//community-legal-access-samra98.c9users.io' 
+Change7:	'//brandonc.sgedu.site/communitylegalaccess' 
+Search8:	'\/\/community-legal-access-samra98.c9users.io' 
+Change8:	'\/\/brandonc.sgedu.site\/communitylegalaccess' 
+Search9:	'%2F%2Fcommunity-legal-access-samra98.c9users.io' 
+Change9:	'%2F%2Fbrandonc.sgedu.site%2Fcommunitylegalaccess' 
+Search10:	'https://brandonc.sgedu.site' 
+Change10:	'http://brandonc.sgedu.site' 
+Search11:	'https:\/\/brandonc.sgedu.site' 
+Change11:	'http:\/\/brandonc.sgedu.site' 
+Search12:	'https%3A%2F%2Fbrandonc.sgedu.site' 
+Change12:	'http%3A%2F%2Fbrandonc.sgedu.site' 
+SCANNED:	Tables:39 	|	 Rows:2629 	|	 Cells:27820 
+UPDATED:	Tables:3 	|	 Rows:916 	|	 Cells:1454 
+ERRORS:		0 
+RUNTIME:	0.443600 sec
+
+====================================
+CONFIGURATION FILE UPDATES:
+====================================
+
+UPDATED WP-CONFIG ARK FILE:
+ - '/home/brandon5/public_html/communitylegalaccess/wp-config.php'
+- PASS: Successfully created a new .htaccess file.
+- PASS: Existing Apache 'htaccess.orig' was removed
+
+====================================
+NOTICES
+====================================
+
+No General Notices Found
+
+
+STEP-3 COMPLETE @ 06:09:46 - RUNTIME: 0.4492 sec. 
+
+

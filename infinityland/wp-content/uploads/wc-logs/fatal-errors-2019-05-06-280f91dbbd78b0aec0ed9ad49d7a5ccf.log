@@ -1,0 +1,28 @@
+2019-05-06T06:39:50+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function Jetpack_JSON_API_Core_Modify_Endpoint::update(), 0 passed in /home/brandon5/public_html/infinityland/wp-content/plugins/jetpack/json-endpoints/jetpack/class.jetpack-json-api-endpoint.php on line 25 and exactly 2 expected in /home/brandon5/public_html/infinityland/wp-content/plugins/jetpack/json-endpoints/jetpack/class.jetpack-json-api-core-modify-endpoint.php:21
+Stack trace:
+#0 /home/brandon5/public_html/infinityland/wp-content/plugins/jetpack/json-endpoints/jetpack/class.jetpack-json-api-endpoint.php(25): Jetpack_JSON_API_Core_Modify_Endpoint->update()
+#1 /home/brandon5/public_html/infinityland/wp-content/plugins/jetpack/class.json-api.php(335): Jetpack_JSON_API_Endpoint->callback('/sites/14515838...', '145158383')
+#2 /home/brandon5/public_html/infinityland/wp-content/plugins/jetpack/class.json-api.php(319): WPCOM_JSON_API->process_request(Object(Jetpack_JSON_API_Core_Modify_Endpoint), Array)
+#3 /home/brandon5/public_html/infinityland/wp-content/plug in /home/brandon5/public_html/infinityland/wp-content/plugins/jetpack/json-endpoints/jetpack/class.jetpack-json-api-core-modify-endpoint.php on line 21
+
+2019-05-06T06:39:55+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function Jetpack_JSON_API_Core_Modify_Endpoint::update(), 0 passed in /home/brandon5/public_html/infinityland/wp-content/plugins/jetpack/json-endpoints/jetpack/class.jetpack-json-api-endpoint.php on line 25 and exactly 2 expected in /home/brandon5/public_html/infinityland/wp-content/plugins/jetpack/json-endpoints/jetpack/class.jetpack-json-api-core-modify-endpoint.php:21
+Stack trace:
+#0 /home/brandon5/public_html/infinityland/wp-content/plugins/jetpack/json-endpoints/jetpack/class.jetpack-json-api-endpoint.php(25): Jetpack_JSON_API_Core_Modify_Endpoint->update()
+#1 /home/brandon5/public_html/infinityland/wp-content/plugins/jetpack/class.json-api.php(335): Jetpack_JSON_API_Endpoint->callback('/sites/14515838...', '145158383')
+#2 /home/brandon5/public_html/infinityland/wp-content/plugins/jetpack/class.json-api.php(319): WPCOM_JSON_API->process_request(Object(Jetpack_JSON_API_Core_Modify_Endpoint), Array)
+#3 /home/brandon5/public_html/infinityland/wp-content/plug in /home/brandon5/public_html/infinityland/wp-content/plugins/jetpack/json-endpoints/jetpack/class.jetpack-json-api-core-modify-endpoint.php on line 21
+
+2019-05-06T06:42:52+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function Jetpack_JSON_API_Core_Modify_Endpoint::update(), 0 passed in /home/brandon5/public_html/infinityland/wp-content/plugins/jetpack/json-endpoints/jetpack/class.jetpack-json-api-endpoint.php on line 25 and exactly 2 expected in /home/brandon5/public_html/infinityland/wp-content/plugins/jetpack/json-endpoints/jetpack/class.jetpack-json-api-core-modify-endpoint.php:21
+Stack trace:
+#0 /home/brandon5/public_html/infinityland/wp-content/plugins/jetpack/json-endpoints/jetpack/class.jetpack-json-api-endpoint.php(25): Jetpack_JSON_API_Core_Modify_Endpoint->update()
+#1 /home/brandon5/public_html/infinityland/wp-content/plugins/jetpack/class.json-api.php(335): Jetpack_JSON_API_Endpoint->callback('/sites/14515838...', '145158383')
+#2 /home/brandon5/public_html/infinityland/wp-content/plugins/jetpack/class.json-api.php(319): WPCOM_JSON_API->process_request(Object(Jetpack_JSON_API_Core_Modify_Endpoint), Array)
+#3 /home/brandon5/public_html/infinityland/wp-content/plug in /home/brandon5/public_html/infinityland/wp-content/plugins/jetpack/json-endpoints/jetpack/class.jetpack-json-api-core-modify-endpoint.php on line 21
+
+2019-05-06T06:42:58+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function Jetpack_JSON_API_Core_Modify_Endpoint::update(), 0 passed in /home/brandon5/public_html/infinityland/wp-content/plugins/jetpack/json-endpoints/jetpack/class.jetpack-json-api-endpoint.php on line 25 and exactly 2 expected in /home/brandon5/public_html/infinityland/wp-content/plugins/jetpack/json-endpoints/jetpack/class.jetpack-json-api-core-modify-endpoint.php:21
+Stack trace:
+#0 /home/brandon5/public_html/infinityland/wp-content/plugins/jetpack/json-endpoints/jetpack/class.jetpack-json-api-endpoint.php(25): Jetpack_JSON_API_Core_Modify_Endpoint->update()
+#1 /home/brandon5/public_html/infinityland/wp-content/plugins/jetpack/class.json-api.php(335): Jetpack_JSON_API_Endpoint->callback('/sites/14515838...', '145158383')
+#2 /home/brandon5/public_html/infinityland/wp-content/plugins/jetpack/class.json-api.php(319): WPCOM_JSON_API->process_request(Object(Jetpack_JSON_API_Core_Modify_Endpoint), Array)
+#3 /home/brandon5/public_html/infinityland/wp-content/plug in /home/brandon5/public_html/infinityland/wp-content/plugins/jetpack/json-endpoints/jetpack/class.jetpack-json-api-core-modify-endpoint.php on line 21
+
