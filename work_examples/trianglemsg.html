@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>
+    
+    
+</script>
+</head>
+<body>
+    <label for="leg1">Enter leg1:</label> <input type="text" id="leg1" onchange="validateLeg1()"> 
+        <span id="leg1errormsg"></span><br>
+    <label for="leg2">Enter leg2:</label> <input type="text" id="leg2" onchange="validateLeg2()"> 
+        <span id="leg2errormsg"></span><br>
+    <input type="button" value="Submit" id="btnSubmit" onclick="calcTri()"><br>
+    <p>The hypotenuse is: <span id="hyp"></span></p>
+</body>    
+    
+        <script type="text/javascript">
+        function calcTri(){
+            if (validateLeg1() && validateLeg2())
+            {
+            var ht=document.getElementById("leg1").value;
+            var wd=document.getElementById("leg2").value;
+            var hyp = Math.sqrt((ht*ht)+(wd*wd))
+            document.getElementById("hyp").innerHTML = hyp.toString();
+            }
+        }
+        
+        function validateLeg1()
+        {
+              "use strict";
+              var strLeg1;
+              var leg1;
+
+              // Get the Radius from the textbos
+              strLeg1 = document.getElementById("leg1").value;
+
+              // Convert it to an integer
+              leg1 = parseFloat( strLeg1 );
+
+              //Make sure the radius is a valid number
+              if (isNaN(leg1)) {
+                  document.getElementById("leg1errormsg").innerHTML = "Invalid Number";
+                  return false;
+              } else {
+                  // erase the error message
+                  document.getElementById("leg1errormsg").innerHTML = "";
+                  // enable the submit button
+                  return true;
+              }
+        }
+        
+        function validateLeg2()
+        {
+             "use strict";
+              var strLeg2;
+              var leg2;
+
+              // Get the Radius from the textbos
+              strLeg2 = document.getElementById("leg2").value;
+
+              // Convert it to an integer
+              leg2 = parseFloat( strLeg2 );
+
+              //Make sure the radius is a valid number
+              if (isNaN(leg2)) {
+                  document.getElementById("leg2errormsg").innerHTML = "Invalid Number";
+                  return false;
+              } else {
+                  // erase the error message
+                  document.getElementById("leg2errormsg").innerHTML = "";
+                  // enable the submit button
+                  return true;
+              }
+        }
+        </script>		
+
+</html>

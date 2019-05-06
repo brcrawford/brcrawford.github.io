@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="assets/style/test.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+<h1 id="title">Restaurant Survey</h1>
+<main>
+  <p id="description">Please give us feedback on feeding you! </p>
+  <form id="survey-form">
+
+
+
+    <div class="grid">
+
+      <div class="question">
+        <label for="Name" id="Name-label"> * Name:</label>
+      </div>
+
+      <div class="input">
+        <input id="Name" type="Name" placeholder="Enter your name here" required>
+      </div>
+
+      <div class="question">
+        <label for="Email" id="Email-label"> * Email:</label>
+      </div>
+
+      <div class="input">
+        <input id="Email" type="Email" placeholder="Enter your email here" required>
+      </div>
+      
+      <div class="question">
+        <label for="Age" id="AgeGroup"> Age Group:</label>
+      </div>
+
+      <div class="input">
+        <select id="Age">
+      <option value="6"><13</option>
+      <option value="5">13-17</option>
+      <option value="4">18-24</option>
+      <option value="3">25-34</option>
+      <option value="2">35-44</option>
+      <option value="1">45-54</option>
+      <option value="0">>54</option>
+    </select>
+    </div>
+      
+      <div class="question">
+        <label> Dine In or Take Out? </label>
+      </div>
+
+      <div class="input">
+        <label class="radio-label" for="dineIn">  <input type="radio" id="dineIn" value="D"> Dine In </label>
+
+        <label class="radio-label" for="takeOut">  <input type="radio" id="takeOut" value="T"> Take Out </label>
+
+      </div>
+
+      <div class="question">
+        <label for="dateTime" id="dateTime"> When did you visit?</label>
+      </div>
+
+      <div class="input">
+        <input id="dateTime" type="datetime-local" value="2017-06-01T08:30" required>
+      </div>
+
+      <div class="question">
+        <label for="FoodQuality"> Quality of food </label>
+      </div>
+
+      <div class="input">
+        <select id="FoodQuality">
+      <option value="4">Excellent</option>
+      <option value="3">Good</option>
+      <option value="2">Average</option>
+      <option value="1">Poor</option>
+    </select>
+    </div>
+    
+    <div class="question">
+        <label for="OverallService"> Overall Service </label>
+      </div>
+
+      <div class="input">
+        <select id="OverallService">
+      <option value="4">Excellent</option>
+      <option value="3">Good</option>
+      <option value="2">Average</option>
+      <option value="1">Poor</option>
+    </select>
+    </div>
+    
+    <div class="question">
+        <label for="Cleanliness"> Cleanliness </label>
+      </div>
+
+      <div class="input">
+        <select id="Cleanliness">
+      <option value="4">Excellent</option>
+      <option value="3">Good</option>
+      <option value="2">Average</option>
+      <option value="1">Poor</option>
+    </select>
+    </div>
+
+      <div class="question">
+        <label for="OrderAccuracy"> Order Accuracy </label>
+      </div>
+
+      <div class="input">
+        <select id="OrderAccuracy">
+      <option value="4">Excellent</option>
+      <option value="3">Good</option>
+      <option value="2">Average</option>
+      <option value="1">Poor</option>
+    </select>
+    </div>
+
+  <div class="question">
+        <label for="SpeedOfService"> Speed of Service </label>
+      </div>
+
+      <div class="input">
+        <select id="SpeedOfService">
+      <option value="4">Excellent</option>
+      <option value="3">Good</option>
+      <option value="2">Average</option>
+      <option value="1">Poor</option>
+    </select>
+    </div>
+    
+    <div class="question">
+        <label for="Price"> Price </label>
+      </div>
+
+      <div class="input">
+        <select id="Price">
+      <option value="4">Excellent</option>
+      <option value="3">Good</option>
+      <option value="2">Average</option>
+      <option value="1">Poor</option>
+    </select>
+    </div>
+    
+    <div class="question">
+        <label for="OverallExperience"> Overall Experience </label>
+      </div>
+
+      <div class="input">
+        <select id="OverallExperience">
+      <option value="4">Excellent</option>
+      <option value="3">Good</option>
+      <option value="2">Average</option>
+      <option value="1">Poor</option>
+    </select>
+    </div>
+
+      <div class="question">
+        <label for="Recommend"> Would you recommend us to anyone?  </label>
+      </div>
+
+      <div class="input">
+        <select id="Recommend">
+      <option value="2">Yes</option>
+      <option value="1">No</option>
+    </select>
+
+      </div>
+
+      <div class="question">
+        <label for="FavoriteThing"> What was/were your favorite thing about our restaurant? </label>
+      </div>
+
+      <div class="input">
+        <select id="FavoriteThing">
+      <option value="5">Food</option>
+      <option value="4">Service</option>
+      <option value="3">Location</option>
+      <option value="2">Price</option>
+      <option value="1">Nothing</option>
+    </select>
+    </div>
+
+      <div class="question">
+        <label for="Comments"> Additional Comments:</label>
+      </div>
+      <div class="input">
+        <textarea id="Comments" placeholder="Leave your comments here..."></textarea>
+      </div>
+
+    </div>
+
+    <button id="submit" onclick="ProcessForm()"> Submit </button>
+
+  </form>
+
+</main>
+<script>
+/* Validate DineIn / Takeout - one of the buttons has to be pushed */
+function validateDineInTakeOut() {
+    var value = "";
+    /* Check each radio button and see if one is checked */
+    if (document.getElementById("dineIn").checked) {
+      value = document.getElementById("dineIn").value;
+    }
+    if (document.getElementById("takeOut").checked) {
+      value = document.getElementById("takeOut").value;
+    }
+    /* If value is still blank then no radio button was pressed */
+    if (value.trim() == "" ) {
+            //document.getElementById("DineInTakeOutError").innerHTML = "Required";
+            return false;
+    }
+    else
+    {
+        //document.getElementById("DineInTakeOutError").innerHTML = "";
+        return true;
+    }
+}
+
+/* Insert Survey Button was clicked */
+function ProcessForm()
+{
+    /* Make sure that everything was valid */
+    if (validateDineInTakeOut()) {
+        
+        /* Everything is Valid - build AJAX call */
+        var myData = {};
+
+        /* If a radio button is checked, then save the value associated with the button */
+        if (document.getElementById("dineIn").checked) {
+          myData.DineInTakeOut = document.getElementById("dineIn").value;
+        }
+        if (document.getElementById("takeOut").checked) {
+          myData.DineInTakeOut = document.getElementById("takeOut").value;
+        }
+        
+        var x = document.getElementById("FoodQuality").selectedIndex;
+        myData.FoodQuality =  document.getElementById("FoodQuality")[x].value;
+        
+        var x = document.getElementById("OverallService").selectedIndex;
+        myData.ServiceQuality =  document.getElementById("OverallService")[x].value;
+        
+        var x = document.getElementById("Cleanliness").selectedIndex;
+        myData.Cleanliness =  document.getElementById("Cleanliness")[x].value;
+        
+        var x = document.getElementById("OrderAccuracy").selectedIndex;
+        myData.OrderAccuracy =  document.getElementById("OrderAccuracy")[x].value;
+        
+        var x = document.getElementById("SpeedOfService").selectedIndex;
+        myData.SpeedOfService =  document.getElementById("SpeedOfService")[x].value;
+        
+        var x = document.getElementById("Price").selectedIndex;
+        myData.Value =  document.getElementById("Price")[x].value;
+        
+        var x = document.getElementById("OverallExperience").selectedIndex;
+        myData.OverallExperience =  document.getElementById("OverallExperience")[x].value;
+        
+        var x = document.getElementById("Recommend").selectedIndex;
+        myData.Recommend =  document.getElementById("Recommend")[x].value;
+        
+        myData.Comments =  document.getElementById("Comments").value;
+        
+        myData.Email =  document.getElementById("Email").value;
+        
+        myData.Age =  document.getElementById("Age").value;
+        
+        myData.Name =  document.getElementById("Name").value;
+
+
+        
+        var myURL = "https://bcrawford-bcrawford.c9users.io/survey/restapi.php/survey/";
+        var myMethod = "POST";
+$(document).ready(function() {
+        $.ajax({
+          method: myMethod,
+          url: myURL,
+          data: myData
+        })
+        .done(function( msg ) {
+            alert( "Message: " + msg );
+        });
+  });
+    }
+}  
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+</body>
+</html>
